@@ -67,6 +67,8 @@ if (!function_exists('shorten_url_meta_box')) {
         $shorten_url = shorten_url($post_url);
         // show url
         echo '<p>Shorten URL: <a href="' . $shorten_url . '" target="_blank">' . $shorten_url . '</a></p>';
+        // debug
+        // echo '<input type="hidden" name="post_url" value="' . $post_url . '">';
     }
 }
 
