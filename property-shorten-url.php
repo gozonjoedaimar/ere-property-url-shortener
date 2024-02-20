@@ -42,6 +42,11 @@ if (!function_exists('shorten_url')) {
 // Add Shorten URL Meta Box
 if (!function_exists('add_shorten_url_meta_box')) {
     function add_shorten_url_meta_box() {
+        global $pagenow;
+        if ('post-new.php' == $pagenow) {
+            // do not show meta box on add new property
+            return;
+        }
         add_meta_box(
             'shorten_url_meta_box',
             'Shorten URL',
