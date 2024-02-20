@@ -8,7 +8,7 @@ Author: Techpad Solutions Inc.
 Author URI: https://techpadsolutions.com
 */
 
-require_once __DIR__ . './env.php';
+require_once __DIR__ . '/env.php';
 
 // Shorten URL
 if (!function_exists('shorten_url')) {
