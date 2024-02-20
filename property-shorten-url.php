@@ -48,12 +48,12 @@ if (!function_exists('add_shorten_url_meta_box')) {
             return;
         }
         add_meta_box(
-            'shorten_url_meta_box',
-            'Shorten URL',
-            'shorten_url_meta_box',
-            'property',
-            'side',
-            'high'
+            'shorten_url_meta_box', // id
+            'Shorten URL', // title
+            'shorten_url_meta_box', // callback
+            'property', // post type
+            'side', // context (normal, advanced, side)
+            'high' // priority (high, core, default, low)
         );
     }
 }
